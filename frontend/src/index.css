@@ -1,0 +1,87 @@
+
+
+/* Global body styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; /* Change the font family if needed */
+  background: #f7f7f7; /* Set a default background */
+  color: #333; /* Set default text color */
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Optional: Set a gradient background for the entire page */
+html, body {
+  background: linear-gradient(45deg, #ff6b6b, #f0a500, #6b7cfa);
+  background-size: 300% 300%;
+  animation: gradient 10s ease infinite;
+}
+
+/* Keyframe animation for gradient */
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Remove default focus outline for inputs and buttons */
+input:focus, button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 165, 0, 0.7);
+}
+
+/* Add additional styling to make inputs and buttons stand out */
+input, button {
+  transition: all 0.3s ease;
+}
+
+/* Customize the button's gradient */
+button {
+  background: linear-gradient(45deg, #ff6b6b, #f0a500, #6b7cfa);
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background: linear-gradient(45deg, #6b7cfa, #ff6b6b, #f0a500);
+  transform: scale(1.05);
+}
+
+/* Styling for the container with the poem */
+.poem-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.poem-container p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.poem-container h2 {
+  font-size: 24px;
+  color: #ffd700; /* Gold color for titles */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
